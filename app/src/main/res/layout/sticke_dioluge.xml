@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#54000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:tint="#FFFFFF"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="Select Sticker"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <GridView
+                android:id="@+id/stickergrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"></GridView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/animal"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/a3"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/monster"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/monster_05"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/love"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/l8"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/wedding"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/wedding06"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/s14"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/party"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/b3"></ImageView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
